@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+
+    android:layout_width="match_parent">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context="shakar.ashrine.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/mainText"
+        android:textColor="#ffffff"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainText"
+        android:text="Encrypt"
+        android:textColor="#ffffff"
+        android:background="#22ffffff"
+        android:id="@+id/encryptbutton"
+      android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/encryptbutton"
+        android:background="#22ffffff"
+        android:text="Decrypt"
+        android:textColor="#ffffff"
+        android:id="@+id/decrpyttbutton"
+        android:layout_marginTop="20dp"/>
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/answertext"
+        android:textIsSelectable="true"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/decrpyttbutton"/>
+</RelativeLayout>
+</ScrollView>
